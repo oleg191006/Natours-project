@@ -5,7 +5,7 @@ const router = express.Router()
 
 const { getAllTours, createTour, getTour, updateTour, deleteTour, checkId, checkBody } = tourController;
 
-router.param('id', checkId)
+// router.param('id', checkId)
 router
     .route('/')
     .get(getAllTours)
